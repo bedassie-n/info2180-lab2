@@ -1,0 +1,108 @@
+
+*{
+    color:  #2D3748;
+    font-family: -apple-system,BlinkMacSystemFont,"SegoeUI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sansserif;
+}
+
+.container{
+    display: grid;
+    grid-template: 20% 76% 4% / 1fr 1fr 1fr;
+}
+
+
+p{
+    font-size: 18px;
+}
+
+body{
+    margin: 0;
+}
+
+#page-header{
+    grid-column: 1 /4;
+    grid-row: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #63B3ED;
+    color: #fff;
+}
+
+#page-header *{
+    color: #fff;
+    margin: 0.1em;
+}
+
+#page-header h1{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    grid-area: 2 / 1 / 2 / 3;
+}
+
+.blog-paragraph{
+    display: flex;
+}
+
+article > header > h2{
+    font-size: 32px;
+    color: #48BB78;
+}
+
+article > header > p{
+    font-style: italic;
+    color:  #718096;
+}
+
+aside{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%; 
+}
+
+aside > div h3{
+    color: #48BB78;
+}
+
+aside > :first-child{
+    color:  #000;
+    background-color:  #E2E8F0;
+    padding: 10px;
+}
+aside > :first-child h3{
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+aside > div > ul li a{
+    color: #4299E1;
+    text-decoration: none;
+}
+
+aside > div > ul li{
+    list-style: none;
+}
+
+#page-footer{
+    grid-area: 3 / 1 / 3 / 4;
+    color: #ffffff;
+    background-color: #2C5282;
+}
+
+#page-footer p{
+    color: #fff;
+}
+
+/*1907 × 1718*/
+img[src="Nathaniel Bedassie 2019.png"]{
+    height: 172px;
+    width: 191px;
+    border-radius: 50%;
+}
